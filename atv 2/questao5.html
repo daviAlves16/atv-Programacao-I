@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu 5&deg; exercício da lista HTML5</title>
+    <meta name="description" content="Buscar textos de outro site para expor nesse arquivo">
+    <meta name="author" content="Davi Pereira Alves dos Santos">
+    <meta name="keywords" content="sites, html, trechos, pagina">
+    <style>
+        body{
+            background: rgb(0, 0, 0);
+            color:rgb(255, 255, 255);
+            padding: 1rem 5rem 1rem 5rem;
+            height: 100vh;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+
+        }
+        .myDiv1{
+            width: 40%;
+            padding: 1rem;
+            background: rgb(51, 224, 216);
+            color: black;
+        }
+        .myDiv2{
+            width: 60%;
+            padding: 1rem;
+            background: pink;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem
+        }
+        .myDiv3{
+            background: rgb(241, 120, 140);
+            padding: 1rem;
+        }
+        .myDiv4{
+            background: rgb(252, 161, 176);
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="myDiv1">
+        <h1>React Blog</h1>
+        <p>This blog is the official source for the updates from the React team. 
+            Anything important, including release notes or deprecation notices, 
+            will be posted here first. You can also follow the @reactjs account on Twitter, 
+            but you won’t miss anything essential if you only read this blog.
+        </p>
+        <a href="https://react.dev/blog">https://react.dev/blog</a>
+    </div>
+    
+    <div class="myDiv2">
+        <div class="myDiv3">
+            <h2>React Canaries: Enabling Incremental Feature Rollout Outside Meta</h2>
+            <p>We’d like to offer the React community an option to adopt individual new features as 
+                soon as their design is close to final, before they’re released in a stable version—similar 
+                to how Meta has long used bleeding-edge versions of React internally. We are introducing a 
+                new officially supported Canary release channel. It lets curated setups like 
+                frameworks decouple adoption of individual React features from the React release schedule.
+            </p>
+            <a href="https://react.dev/blog/2023/05/03/react-canaries">https://react.dev/blog/2023/05/03/react-canaries</a>
+        </div>
+    
+        <div class="myDiv4">
+            <h2>React Server Components</h2>
+            <p>React Server Components (or RSC) is a new application architecture designed by the React team.
+                We’ve first shared our research on RSC in an introductory talk and an RFC. To recap them, 
+                we are introducing a new kind of component—Server Components—that run ahead of time and are 
+                excluded from your JavaScript bundle. Server Components can run during the build, letting 
+                you read from the filesystem or fetch static content. They can also run on the server, 
+                letting you access your data layer without having to build an API. 
+                You can pass data by props from Server Components to the interactive Client Components 
+                in the browser. RSC combines the simple “request/response” mental model of server-centric 
+                Multi-Page Apps with the seamless interactivity of client-centric Single-Page Apps, 
+                giving you the best of both worlds. Since our last update, we have merged the React 
+                Server Components RFC to ratify the proposal.
+            </p>
+            <a href="https://react.dev/blog/2023/03/22/react-labs-what-we-have-been-working-on-march-2023">https://react.dev/blog/2023/03/22/react-labs-what-we-have-been-working-on-march-2023</a>
+        </div>
+       
+    </div>
+</body>
+</html>
